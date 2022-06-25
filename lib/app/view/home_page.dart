@@ -27,8 +27,8 @@ class _HomePageState extends State<HomePage> {
         onDoubleTap: setShowFirstPage,
         child: SizedBox.expand(
           child: AnimatedCrossFade(
-            firstChild: SimplicityShaderPage(),
-            secondChild: SpaceShaderPage(),
+            firstChild: const SimplicityShaderPage(),
+            secondChild: const SpaceShaderPage(),
             crossFadeState: showFirstPage ? CrossFadeState.showFirst : CrossFadeState.showSecond,
             duration: const Duration(milliseconds: 500),
           ),

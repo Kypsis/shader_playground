@@ -7,9 +7,9 @@ import 'dart:typed_data';
 import 'dart:ui';
 
 /// Compiles the shader simplicityShader into a usable [FragmentProgram].
-Future<FragmentProgram> simplicityShaderFragmentProgram() =>
-    FragmentProgram.compile(
-        spirv: Uint8List.fromList(simplicityShaderBytes).buffer);
+Future<FragmentProgram> simplicityShaderFragmentProgram() => FragmentProgram.compile(
+      spirv: Uint8List.fromList(simplicityShaderBytes).buffer,
+    );
 
 /// Bytes of the compiled shader (simplicityShader) in SPR-V format
 const simplicityShaderBytes = [
